@@ -19,9 +19,9 @@ git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZS
 
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_CUSTOM/plugins/zsh-autocomplete
 
-sed -i 's/plugins=(git)/plugins=(git sudo web-search gh zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete aws docker)/' ~/.zshrc
+sed -i 's/plugins=*/plugins=(git sudo web-search gh zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete aws docker)/' ~/.zshrc
 
-sed -i 's/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"fino-time\"/' ~/.zshrc
+sed -i 's/ZSH_THEME=*"/ZSH_THEME=\"fino-time\"/' ~/.zshrc
 
 source ~/.zshrc
 
